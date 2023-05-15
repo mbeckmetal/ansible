@@ -1,7 +1,7 @@
 [hosts]
-pihole1.home.beckcorp.io
-pihole2.home.beckcorp.io
-pihole3.home.beckcorp.io
-vpn-wireguard.home.beckcorp.io
-netbox.home.beckcorp.io
-portainer-trusted.home.beckcorp.io
+pihole1
+pihole2
+pihole3
+vpn-wireguard
+netbox
+portainer-trusted
