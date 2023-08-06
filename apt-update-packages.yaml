@@ -1,8 +1,8 @@
 - name: apt update && apt upgrade
-  hosts: "*"
-  become: yes
+  hosts: all
+  become: true
   tasks:
-    - name: apt
+    - name: update & upgrade apt 
       apt:
         update_cache: yes
-        upgrade: 'yes'
+        upgrade: yes
