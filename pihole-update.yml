@@ -1,5 +1,5 @@
 - name: Update pihole
-  hosts: "pihole1.home,pihole2.home,pihole3.home"
+  hosts: "*"
   tasks:
   - name: pihole update
     shell: pihole -up
