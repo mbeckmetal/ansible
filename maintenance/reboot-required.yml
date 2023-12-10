@@ -1,10 +1,13 @@
-- name: Check if restart is required
-  hosts: all
+---
+- name: check if system reboot is required
+  hosts: "{{ hosts }}"
+  become: yes
   tasks:
-    - name: Check that the reboot-required exists
+    - name: check if system reboot is required
+      become: true
       stat:
         path: /var/run/reboot-required
-      register: p
+      register: reboot_required
     - debug:
-        msg: "Reboot required"
-      when: p.stat.exists
+        msg: "Reboot is required"
+      when: reboot_required.stat.exists
