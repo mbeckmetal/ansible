@@ -1,4 +1,4 @@
-- hosts: "*"
+- hosts: all
   become: yes
   tasks:
       ## Install Ansible Galaxy community collection first. "ansible-galaxy collection install community.general"
