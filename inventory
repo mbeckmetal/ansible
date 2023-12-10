@@ -1,7 +1,0 @@
-[hosts]
-pihole1
-pihole2
-pihole3
-vpn-wireguard
-netbox
-portainer-trusted
