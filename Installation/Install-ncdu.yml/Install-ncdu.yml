@@ -1,0 +1,9 @@
+- name: install latest ncdu
+  hosts: "*"
+  tasks:
+    - name: install ncdu
+      apt:
+        name: ncdu
+        state: present
+        update_cache: true
+      become: true
