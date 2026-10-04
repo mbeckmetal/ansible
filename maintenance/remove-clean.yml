@@ -1,0 +1,10 @@
+- name: Remove unused dependency packages (autoremove)
+  ansible.builtin.apt:
+    autoremove: true
+    purge: true # Optional: cleans up configuration files left behind by unneeded packages
+  become: true
+
+- name: Clean local repository of cached package files (autoclean)
+  ansible.builtin.apt:
+    autoclean: true
+  become: true
